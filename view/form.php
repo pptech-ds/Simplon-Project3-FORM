@@ -1,4 +1,4 @@
-<form method="POST" action="">
+<form method="POST" action="index.php">
     <p>
         <label for="firstName">Nom: </label>
         <input type="text" name="firstName" required />

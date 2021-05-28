@@ -1,15 +1,15 @@
-<?php include('view/header.php') ?>
-<?php include('view/functions.php') ?>
-<?php include('view/const.php') ?>
+<?php require 'view/header.php' ?>
+<?php require 'view/functions.php' ?>
+<?php require 'view/const.php' ?>
 
 
 <?php 
-    var_dump($_POST);
+    // var_dump($_POST);
     if ($_POST === []) { 
-        include('view/form.php');
+        require 'view/form.php';
     } else {
-        include('view/validationForm.php');
+        require 'view/validationForm.php';
     }
 ?>
 
-<?php include('view/footer.php') ?>
+<?php require 'view/footer.php' ?>

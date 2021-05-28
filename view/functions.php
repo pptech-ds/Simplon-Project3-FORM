@@ -15,7 +15,7 @@ function getScore(array $arrayScore) :int
 {
     $score = 0;
     foreach ($arrayScore as $key => $value) { 
-        if(($key === 'q1Radios') || ($key === 'q2Radios') || ($key === 'q3Radios')){
+        if(($key === 'question1') || ($key === 'question2') || ($key === 'question3')){
             $score += $value;
         }
     }

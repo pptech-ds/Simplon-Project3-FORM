@@ -7,9 +7,9 @@
 <?php
     
     $arrayTest = [
-        'q1Radios' => '1',
-        'q2Radios' => '1',
-        'q3Radios' => '1',
+        'question1' => '1',
+        'question2' => '1',
+        'question3' => '1',
         'tototo' => '1',
         'dshfhj' => '1',
         'dfkjsdhfkj' => '1'

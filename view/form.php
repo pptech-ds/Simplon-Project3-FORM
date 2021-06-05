@@ -13,7 +13,7 @@
         </div>
 
         <div class="form-group">
-            <label for="phone" class="form-label mt-4">Numéro de téléphone</label>
+            <label for="phone" class="form-label mt-4">Numéro de téléphone (10 Chiffres)</label>
             <input type="tel"  name="phone" class="form-control" id="phone" aria-describedby="phoneHelp" pattern="0[1-9][0-9]{8}" placeholder="0123456789" required="">
         </div>
 

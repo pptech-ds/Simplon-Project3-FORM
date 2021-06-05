@@ -5,7 +5,9 @@
 */
 function checkString($value): string
 {
-    if (is_string($value) === false) {
-        return "Erreur : ce n'est pas uen chaine de caractère";
+    if (is_string($value) === true) {
+        return 'this is a correct string';
+    } else {
+        return 'this is NOT a correct string';
     }
 }

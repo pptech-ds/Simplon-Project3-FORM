@@ -1,6 +1,6 @@
 <form method="POST" action="index.php">
     <fieldset>
-        <legend>Customer Satisfaction Form</legend>
+        
         
         <div class="form-group">
             <label for="lastname" class="form-label mt-4">Nom</label>

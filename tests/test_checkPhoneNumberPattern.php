@@ -1,39 +1,21 @@
-<?php include('../view/header.php') ?>
-<?php include('../view/functions.php') ?>
-<?php include('../view/const.php') ?>
+<?php require '../service/checkPhoneNumberPattern.php'; ?>
+<?php require '../service/checkString.php'; ?>
+<?php require '../service/getScore.php'; ?>
+<?php require '../service/printScore.php'; ?>
 
 
 <h2>TEST function checkPhoneNumberPattern</h2>
 <?php
-    
-    $arrayTest = [
-        'question1' => '1',
-        'question2' => '1',
-        'question3' => '1',
-        'tototo' => '1',
-        'dshfhj' => '1',
-        'dfkjsdhfkj' => '1'
-    ];
-
-    echo '<br>TEST function getScore: '.getScore($arrayTest).'<br><br>';
-
-    echo '<br>TEST function printScore: '.printScore($maxScore, getScore($arrayTest)).'<br><br>';
-
-    echo '<br>TEST function checkString "this is a string": '.checkString('this is a string').'<br><br>';
-    echo '<br>TEST function checkString "25": '.checkString('25').'<br><br>';
-    echo '<br>TEST function checkString 25: '.checkString(25).'<br><br>';
-    echo '<br>TEST function checkString true: '.checkString(true).'<br><br>';
-
-    echo '<br> PETTERN MATCHING TEST  ';
-    var_dump(preg_match("0[1-9][0-9]{8}", '0143047531'));
-    echo '<br>';
-
-    echo '<br>TEST function checkPhoneNumberPattern 0123456789: '.checkPhoneNumberPattern('0123456789').'<br><br>';
-    echo '<br>TEST function checkPhoneNumberPattern 095584665788: '.checkPhoneNumberPattern('095584665788').'<br><br>';
-    echo '<br>TEST function checkPhoneNumberPattern qsdqs: '.checkPhoneNumberPattern('qsdqs').'<br><br>';
-    echo '<br>TEST function checkPhoneNumberPattern tqsd98sd57: '.checkPhoneNumberPattern('tqsd98sd57').'<br><br>';
-
-?>
-
-
-<?php include('view/footer.php') ?>
+echo '<br>TEST function checkPhoneNumberPattern 0123456789: ' .
+    checkPhoneNumberPattern('0123456789') .
+    '<br><br>';
+echo '<br>TEST function checkPhoneNumberPattern 01234567891011: ' .
+    checkPhoneNumberPattern('01234567891011') .
+    '<br><br>';
+echo '<br>TEST function checkPhoneNumberPattern qsdqs: ' .
+    checkPhoneNumberPattern('qsdqs') .
+    '<br><br>';
+echo '<br>TEST function checkPhoneNumberPattern tqsd98sd57: ' .
+    checkPhoneNumberPattern('tqsd98sd57') .
+    '<br><br>';
+ ?>

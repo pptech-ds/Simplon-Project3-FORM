@@ -1,15 +1,11 @@
-<?php require 'view/header.php' ?>
-<?php require 'view/functions.php' ?>
-<?php require 'view/const.php' ?>
+<?php require 'service/checkPhoneNumberPattern.php'; ?>
+<?php require 'service/checkString.php'; ?>
+<?php require 'service/getScore.php'; ?>
+<?php require 'service/printScore.php'; ?>
 
 
-<?php 
-    // var_dump($_POST);
-    if ($_POST === []) { 
-        require 'view/form.php';
-    } else {
-        require 'view/validationForm.php';
-    }
-?>
-
-<?php require 'view/footer.php' ?>
+<?php if ($_POST === []) {
+    require 'view/default.php';
+} else {
+    require 'view/validationForm.php';
+}

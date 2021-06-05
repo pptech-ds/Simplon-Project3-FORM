@@ -7,11 +7,17 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
 
     <title>Customer Satisfaction Form</title>
 </head>
 <body>
     <div class="container">
-        <br><br><br>
 
+    <h1>Customer Satisfaction Form</h1>
+
+    <?php require 'view/form.php'; ?>
+
+    </div>
+
+</body>
+</html>

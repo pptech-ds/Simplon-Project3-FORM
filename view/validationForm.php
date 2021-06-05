@@ -25,8 +25,9 @@
             $_POST['question3'] === '-1' &&
             $_POST['recall'] === 'true'
         ) { ?>
-                <p>Vous serez rappelé au numéro #numéro de téléphone saisi#</p>
-                <?= $_POST['phone'] . '<br>' ?>
+                <p>Vous serez rappelé au numéro <?= $_POST['phone'] .
+                    '<br>' ?></p>
+                
         <?php } ?>
 
     </div>
